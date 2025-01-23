@@ -1,5 +1,8 @@
+import { animate } from "popmotion"
+
 const ball = document.querySelector(".ball")
-popmotion.animate({
+
+animate({
   from: "0px",
   to: "100px",
   repeat: Infinity,
@@ -9,3 +12,14 @@ popmotion.animate({
     ball.style.top = update
   },
 })
+
+// popmotion.animate({
+//   from: "0px",
+//   to: "100px",
+//   repeat: Infinity,
+//   repeatType: "mirror",
+//   type: "spring",
+//   onUpdate(update) {
+//     ball.style.top = update
+//   },
+// })
